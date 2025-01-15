@@ -84,8 +84,8 @@ public class MockLeadService : ILeadService
 
     private string GetRandomUzbekName()
     {
-        var firstNames = new[] { "Alisher", "Gulnora", "Bobur", "Dilshod", "Nodira", "Jamshid", "Sarvar", "Oybek", "Malika", "Akmal", "Feruza", "Rustam", "Ziyoda", "Umid", "Nargiza" };
-        var lastNames = new[] { "Qodirov", "Karimova", "Alimov", "Tursunov", "Azizova", "Nurmatov", "Abdullayev", "Toshpulatov", "Rahimova", "Xolmatov", "Umarova", "Saidov", "Yusupova", "Ismoilov", "Ergasheva" };
+        var firstNames = new[] { "Alisher"}; //"Gulnora", "Bobur", "Dilshod", "Nodira", "Jamshid", "Sarvar", "Oybek", "Malika", "Akmal", "Feruza", "Rustam", "Ziyoda", "Umid", "Nargiza"
+        var lastNames = new[] { "Qodirovasdjfklasjdfl;kjsaddfl;kjaslkdfjasl;kdfjlskdf"}; //, "Karimova", "Alimov", "Tursunov", "Azizova", "Nurmatov", "Abdullayev", "Toshpulatov", "Rahimova", "Xolmatov", "Umarova", "Saidov", "Yusupova", "Ismoilov", "Ergasheva"
 
         var random = new Random();
         return $"{firstNames[random.Next(firstNames.Length)]} {lastNames[random.Next(lastNames.Length)]}";

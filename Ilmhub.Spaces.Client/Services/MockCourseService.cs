@@ -16,16 +16,16 @@ public class MockCourseService : ICourseService
     {
         courses = new List<Course>
         {
-            new Course { Id = 1, Name = "Web Dasturlash", Description = "HTML, CSS, va JavaScript asoslari", Price = 1500000, DurationInWeeks = 12, Instructor = "Alisher Qodirov", StartDate = DateTime.Now.AddDays(7), IsActive = true },
-            new Course { Id = 2, Name = "Python Asoslari", Description = "Python dasturlash tili bo'yicha boshlang'ich kurs", Price = 1200000, DurationInWeeks = 8, Instructor = "Gulnora Karimova", StartDate = DateTime.Now.AddDays(14), IsActive = true },
-            new Course { Id = 3, Name = "Ma'lumotlar Bazasi", Description = "SQL va PostgreSQL bo'yicha amaliy kurs", Price = 1800000, DurationInWeeks = 10, Instructor = "Bobur Alimov", StartDate = DateTime.Now.AddDays(21), IsActive = true },
-            new Course { Id = 4, Name = "Java Dasturlash", Description = "Java dasturlash tili va OOP kontseptsiyalari", Price = 2000000, DurationInWeeks = 16, Instructor = "Dilshod Tursunov", StartDate = DateTime.Now.AddDays(30), IsActive = true },
-            new Course { Id = 5, Name = "Mobile Dasturlash", Description = "Android va iOS uchun mobil ilovalar yaratish", Price = 2500000, DurationInWeeks = 20, Instructor = "Nodira Azizova", StartDate = DateTime.Now.AddDays(45), IsActive = true },
-            new Course { Id = 6, Name = "Frontend Frameworklar", Description = "React va Vue.js bo'yicha amaliy kurs", Price = 1800000, DurationInWeeks = 14, Instructor = "Jamshid Nurmatov", StartDate = DateTime.Now.AddDays(60), IsActive = true },
-            new Course { Id = 7, Name = "Backend Dasturlash", Description = "Node.js va Express.js orqali server yaratish", Price = 2200000, DurationInWeeks = 16, Instructor = "Sarvar Abdullayev", StartDate = DateTime.Now.AddDays(75), IsActive = true },
-            new Course { Id = 8, Name = "DevOps Asoslari", Description = "Docker, Kubernetes va CI/CD jarayonlari", Price = 2800000, DurationInWeeks = 18, Instructor = "Oybek Toshpulatov", StartDate = DateTime.Now.AddDays(90), IsActive = true },
-            new Course { Id = 9, Name = "Kiberhavfsizlik", Description = "Tarmoq va dasturiy ta'minot xavfsizligi asoslari", Price = 3000000, DurationInWeeks = 20, Instructor = "Malika Rahimova", StartDate = DateTime.Now.AddDays(105), IsActive = true },
-            new Course { Id = 10, Name = "Sun'iy Intellekt", Description = "Machine Learning va Deep Learning asoslari", Price = 3500000, DurationInWeeks = 24, Instructor = "Akmal Xolmatov", StartDate = DateTime.Now.AddDays(120), IsActive = true },
+            // new Course { Id = 1, Name = "Web Dasturlash", Description = "HTML, CSS, va JavaScript asoslari", Price = 1500000, DurationInWeeks = 12, Instructor = "Alisher Qodirov", StartDate = DateTime.Now.AddDays(7), IsActive = true },
+            // new Course { Id = 2, Name = "Python Asoslari", Description = "Python dasturlash tili bo'yicha boshlang'ich kurs", Price = 1200000, DurationInWeeks = 8, Instructor = "Gulnora Karimova", StartDate = DateTime.Now.AddDays(14), IsActive = true },
+            // new Course { Id = 3, Name = "Ma'lumotlar Bazasi", Description = "SQL va PostgreSQL bo'yicha amaliy kurs", Price = 1800000, DurationInWeeks = 10, Instructor = "Bobur Alimov", StartDate = DateTime.Now.AddDays(21), IsActive = true },
+            // new Course { Id = 4, Name = "Java Dasturlash", Description = "Java dasturlash tili va OOP kontseptsiyalari", Price = 2000000, DurationInWeeks = 16, Instructor = "Dilshod Tursunov", StartDate = DateTime.Now.AddDays(30), IsActive = true },
+            // new Course { Id = 5, Name = "Mobile Dasturlash", Description = "Android va iOS uchun mobil ilovalar yaratish", Price = 2500000, DurationInWeeks = 20, Instructor = "Nodira Azizova", StartDate = DateTime.Now.AddDays(45), IsActive = true },
+            // new Course { Id = 6, Name = "Frontend Frameworklar", Description = "React va Vue.js bo'yicha amaliy kurs", Price = 1800000, DurationInWeeks = 14, Instructor = "Jamshid Nurmatov", StartDate = DateTime.Now.AddDays(60), IsActive = true },
+            // new Course { Id = 7, Name = "Backend Dasturlash", Description = "Node.js va Express.js orqali server yaratish", Price = 2200000, DurationInWeeks = 16, Instructor = "Sarvar Abdullayev", StartDate = DateTime.Now.AddDays(75), IsActive = true },
+            // new Course { Id = 8, Name = "DevOps Asoslari", Description = "Docker, Kubernetes va CI/CD jarayonlari", Price = 2800000, DurationInWeeks = 18, Instructor = "Oybek Toshpulatov", StartDate = DateTime.Now.AddDays(90), IsActive = true },
+            // new Course { Id = 9, Name = "Kiberhavfsizlik", Description = "Tarmoq va dasturiy ta'minot xavfsizligi asoslari", Price = 3000000, DurationInWeeks = 20, Instructor = "Malika Rahimova", StartDate = DateTime.Now.AddDays(105), IsActive = true },
+            new Course { Id = 10, Name = "Sun'iy Intellekt", Description = "Machine Learning va Deep Learning asoslari", Price = 3500000, DurationInWeeks = 24, Instructor = "Akmal Xolmatovsdfkj;alksdfj;aslksjdf;laksjdfl;kjas;lkdf;saldkfj", StartDate = DateTime.Now.AddDays(120), IsActive = true },
             // ... (add 10 more courses with similar Uzbek-themed information)
         };
     }

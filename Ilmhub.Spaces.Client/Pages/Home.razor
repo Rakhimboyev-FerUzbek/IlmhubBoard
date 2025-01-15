@@ -6,18 +6,18 @@
 @inject IDialogService DialogService
 @inject ILeadService LeadService
 
-<MudContainer MaxWidth="MaxWidth.ExtraExtraLarge" Class="pa-4">
-    <MudStack Row="true" AlignItems="@AlignItems.Center" Spacing="3">
-        <MudButton Variant="Variant.Outlined"
-                   EndIcon="@Icons.Material.Filled.Add"
-                   Color="Color.Tertiary"
-                   Class="ma-4">
+<MudContainer MaxWidth="MaxWidth.ExtraExtraLarge" Class="pa-2">
+    <MudStack Row="true" AlignItems="@AlignItems.Center" Spacing="10">
+        <MudButton Variant="Variant.Filled"
+                EndIcon="@Icons.Material.Filled.Add"
+                Color="Color.Tertiary"
+                Class="ma-3">
             Qo'shish
         </MudButton>
         <MudTextField T="string" ValueChanged="@(s => OnSearch(s))" Placeholder="Qidirish"
-                      Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search"
-                      IconSize="Size.Medium" Class="mt-0"></MudTextField>
-        <MudMenu FullWidth="false" Class="menu-position">
+                    Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search"
+                    IconSize="Size.Medium" Class="mt-0"></MudTextField>
+        @* <MudMenu FullWidth="false" Class="menu-position">
             <ActivatorContent>
                 <MudChip T="string" Icon="@Icons.Material.Filled.Person" Color="Color.Primary">Status</MudChip>
             </ActivatorContent>
@@ -27,11 +27,9 @@
                     <MudMenuItem Icon="@GetIconForColumn(column)" Style="@($"color: {GetColorForColumn(column)};")" @onclick="() => SetCurrentStatus(column)">@column</MudMenuItem>
                 }
             </ChildContent>
-        </MudMenu>
-        <MudSpacer />
-        <MudSpacer />
-        <MudSpacer />
-        <MudSpacer />
+        </MudMenu> *@
+        <MudSpacer>
+        </MudSpacer>        
     </MudStack>
 
     <div class="hide-scrollbar" style="overflow-x: auto; white-space: nowrap;">
@@ -39,13 +37,15 @@
             <ChildContent>
             @foreach (var column in new[] { "Yangi Lidlar", "Bog'lanilgan", "Kuzatuvda", "Yakuniy Holat" })
             {
-                <MudPaper Elevation="0" Style="height: calc(100vh - 175px); flex: 1; display: flex; flex-direction: column; min-width: 200px; max-width: 400px;" Class="pa-4 mx-1 transparent rounded-lg">
+                <MudPaper Elevation="10" Style="height: calc(100vh - 175px); flex: 1; display: flex; flex-direction: column; min-width: 200px; max-width: 400px;" Class="mx-1 transparent rounded-lg">
                     <MudList T="Lead" Style="flex-grow: 1; overflow-y: auto;" Class="d-flex flex-column mud-height-full">
                         <MudListSubheader>
-                            <MudToolBar Gutters="false" Class="py-2">
-                                <div class="column" style="background-color:@GetColorForColumn(column); height: 4px; margin-bottom: 5px ; width: 100%;">
-                                </div>
-                            </MudToolBar>
+                            @* <h2 style="text-align: center;">@column</h2> *@
+                            <MudText Style="text-align: center;" Class="Typo.h6">@column</MudText>
+                            @* <MudToolBar Gutters="false" Class="py-2"> *@
+                                @* <div class="column" style="background-color:@GetColorForColumn(column); height: 4px; width: 100%;">
+                                </div> *@
+                            @* </MudToolBar> *@
                         </MudListSubheader>
                         <MudDropZone T="Lead" Identifier="@column" Class="flex-grow-1 overflow-y-auto hide-scrollbar" AllowReorder="true"/>
                     </MudList>
